@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SidenavServiceService } from 'src/app/sidenav-service.service';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FuzzyHotel';
+
+@ViewChild('sidenav') public sidenav: MatSidenav;
+
+constructor(private sidenavService: SidenavServiceService) {
+}
+
+ngAfterViewInit(): void {
+  this.sidenavService.setSidenav(this.sidenav);
+}
 }

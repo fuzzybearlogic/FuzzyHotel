@@ -25,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import { SidenavServiceService } from './sidenav-service.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     AppRoutingModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [SidenavServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
