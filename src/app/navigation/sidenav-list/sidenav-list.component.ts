@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavServiceService } from 'src/app/sidenav-service.service';
 
 @Component({
   selector: 'app-sidenav-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private sidenav: SidenavServiceService
+  ) { }
 
+  toggleRightSidenav() {
+    this.sidenav.toggle();
+  }
   ngOnInit(): void {
   }
+
 
 }
