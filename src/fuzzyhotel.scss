@@ -13,5 +13,9 @@ $fuzzyhotel-theme: mat-light-theme($fuzzyhotel-primary, $fuzzyhotel-accent, $fuz
 @include angular-material-theme($fuzzyhotel-theme);
 
 .navtabs-container {
-    background-color: mat-color($fuzzyhotel-primary);
+    background-color: mat-color($fuzzyhotel-accent);
+}
+
+.sidenavlist-container {
+    background-color: mat-color($fuzzyhotel-accent);
 }

@@ -1,0 +1,49 @@
+.home-container {
+    background-size: cover;
+    background: url(/assets/images/thaibeach.jpg) no-repeat;
+    height: calc(100vh - 145);
+}
+
+.book-now-container {
+    padding: 35px 115px;
+}
+
+.book-now-button {
+    width: 170px;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+
+}
+.header-container {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.header-container .mat-display-1 {
+    color: white;
+}
+
+.header-container .mat-subheading-2 {
+    color: white;
+    margin: 10px;
+}
+
+@media all and (min-width: 768px) {
+    .home-container {
+        height: 90vh;
+    }
+  
+}
+
+@media all and (max-width: 599px) {
+    .header-container .mat-display-1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    .header-container .mat-subheading-2 {
+        font-size: 1.1rem;
+        line-height: 1.1;
+    }
+}

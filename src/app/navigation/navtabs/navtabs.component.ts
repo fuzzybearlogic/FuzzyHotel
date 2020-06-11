@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-navtabs',
   templateUrl: './navtabs.component.html',
@@ -11,5 +12,6 @@ export class NavtabsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
