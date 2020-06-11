@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$fuzzyhotel-primary: mat-palette($mat-green, 500);
+$fuzzyhotel-secondary:  mat-palette($mat-amber, 500);
+$fuzzyhotel-accent:  mat-palette($mat-green, 200);
+
+$fuzzyhotel-warn:    mat-palette($mat-red);
+
+$fuzzyhotel-theme: mat-light-theme($fuzzyhotel-primary, $fuzzyhotel-accent, $fuzzyhotel-warn);
+
+@include angular-material-theme($fuzzyhotel-theme);
+
+.navtabs-container {
+    background-color: mat-color($fuzzyhotel-primary);
+}
